@@ -34,17 +34,17 @@
 
 Install modules
 
-"""
+```
 npm install
-"""
+```
 
 Add environment variable if you deploy on server (take Heroku as example)
 
-"""
+```
 PEER_HOST=yourapp.heroku.com
 PEER_PATH=uptoyou
 PEER_PORT=443
-"""
+```
 
 [Stackoverflow here if you have any question.](https://stackoverflow.com/questions/48084622/deploy-peerjs-server-on-heroku)
 
@@ -52,8 +52,8 @@ PEER_PORT=443
 
 Now you can run the server and see it on localhost:3000
 
-"""
+```
 npm start
-"""
+```
 
 

@@ -1,6 +1,7 @@
 const socket = io('/');
 const videoGrid = document.getElementById('video-grid');
 const myPeer = new Peer(undefined, {
+  secure: true,
   host: PEER_HOST,
   port: PEER_PORT,
   path: PEER_PATH
@@ -11,6 +12,7 @@ const peers = {};
 const openVideo = false;
 var myStream = null;
 const ROOM_ID = SERVER_ID + "room";
+var USER_ID;
 
 //get media from user browser
 function getMedia(includeVideo, includeAudio) {

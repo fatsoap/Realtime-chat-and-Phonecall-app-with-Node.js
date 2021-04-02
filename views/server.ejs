@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('head.ejs') %>
+        <%- include('socket_header.ejs') %>
+    </head>
+<body>
+    <div class="container mt-2 mb-2">
+        <button id="join-room-video" class="btn btn-primary mt-1" >Join with webCamera</button>
+        <button id="join-room-audio" class="btn btn-primary mt-1" >Join without webCam</button>
+        <button id="leave-room" class="btn btn-danger mt-1" >Leave</button>
+        <div id="video-grid"></div>
+    </div>
+    <ul id="messages"></ul>
+    <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+    
+</body>
+</html>

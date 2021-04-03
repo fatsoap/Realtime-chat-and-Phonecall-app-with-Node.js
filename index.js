@@ -3,8 +3,7 @@ const app = require('./app');
 const PORT = process.env.PORT || 3000;
 //app.set('port', PORT);
 
-//const server = require('http').createServer(app);
-const server = app.listen(PORT);
+const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const socket_controller = require('./socketController');
 
@@ -27,4 +26,4 @@ peerServer.on('disconnect', ({ id }) => {
 
 
 
-//server.listen(PORT, () => console.log('server running'));
+server.listen(PORT, () => console.log('server running'));

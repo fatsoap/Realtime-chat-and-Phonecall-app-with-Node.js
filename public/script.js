@@ -1,4 +1,4 @@
-const socket = io('https://soap-realtime-chat.herokuapp.com/');
+const socket = io('/');
 const videoGrid = document.getElementById('video-grid');
 const myPeer = new Peer(undefined, {
   secure: true,

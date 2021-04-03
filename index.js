@@ -1,7 +1,7 @@
 const app = require('./app');
 
 const PORT = process.env.PORT || 3000;
-app.set('port', PORT);
+//app.set('port', PORT);
 
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
@@ -12,7 +12,7 @@ io.on('connection', socket_controller(io));
 
 const { PeerServer  } = require('peer');
 const PeerHost = process.env.PEER_HOST || 'localhost';
-const PeerPort = process.env.PEER_PORT || 3001;
+const PeerPort = process.env.PEER_PORT || 443;
 const PeerPath = process.env.PEER_PATH || '/myapp';
 const peerServer = PeerServer({ port: PeerPort, path: PeerPath });
 

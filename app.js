@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true })); 
 
 const PeerHost = process.env.PEER_HOST || 'localhost';
-const PeerPort = process.env.PEER_PORT || 3001;
+const PeerPort = process.env.PEER_PORT || 443;
 const PeerPath = process.env.PEER_PATH || '/myapp';
 
 
